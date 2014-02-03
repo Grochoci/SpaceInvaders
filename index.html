@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="US-ASCII"> 
+        <title> Space Invaders </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="gameArea">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div id="instructions">
+            <p> Use the arrow keys to move the ship, press the space bar
+                to fire at the evil creatures, and press p to take a break. Good luck!
+            </p>
+        </div>
+        <div>
+        	<img id="ship" src="ship.png" alt="Spaceship" />
+        	<img id="rocket" src="rocket.png" alt="Rocket" />
+        	<img id="alien" src="alien.png" alt="Alien" />
+            <img id="bomb" src="bomb.png" alt="Bomb" />
+            <img id="boss" src="InvaderBoss.png" alt="Boss" />
+            <img id="hpbar" src="HealthBar.png" alt="HP"/>
+            <img id="bomba" src="RocketTypeA.png" alt="BombA" />
+            <img id="bombb" src="RocketTypeB.png" alt="BombB" />
+        </div>
+        <script src="index.js"></script>
+        <script>
+            var canvas = document.getElementById("gameCanvas");
+            
+            pressedKeys = {};
+            window.addEventListener('keydown', keyDown);
+            window.addEventListener('keyup', keyUp);
+            
+            welcome(canvas);
+        </script>
+    </body>
+</html>

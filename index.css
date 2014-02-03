@@ -1,0 +1,34 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#gameArea {
+    width: 800px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gameCanvas {
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000000;
+    background: url(Nebula_bg.jpeg);
+	background-size: 800px 600px;
+}
+
+#instructions {
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img 
+{
+    display:none;
+}
